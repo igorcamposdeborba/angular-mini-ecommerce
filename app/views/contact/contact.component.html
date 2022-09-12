@@ -1,0 +1,51 @@
+<app-preview-checkout></app-preview-checkout>
+
+<h1>Digite para fazer seu pedido</h1>
+<form class="form form-group"> 
+    <table class="full-width" cellspacing="0">
+      <tr>
+        <td><mat-form-field class="full-width" appearance="fill">
+          <mat-label ngModel required>Nome e sobrenome</mat-label>
+          <input matInput>
+        </mat-form-field><mat-form-field class="full-width" appearance="fill">
+          <mat-label>Telefone</mat-label>
+          <span matPrefix>+55 &nbsp;</span>
+          <input type="tel" matInput placeholder="51 999000000">
+          <mat-icon matSuffix>Editar</mat-icon>
+        </mat-form-field></td>
+      </tr>
+    </table>
+  
+    <p>
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Endereço</mat-label>
+        <textarea matInput placeholder="Exemplo: Avenida Assis Brasil 1500 apartamento 12 B"></textarea>
+      </mat-form-field>
+    </p>
+  
+    <table class="full-width" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field class="full-width" appearance="fill">
+              <mat-label>Cidade</mat-label>
+              <input matInput placeholder="Exemplo: Porto Alegre">
+          </mat-form-field>
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Observação</mat-label>
+              <textarea matInput placeholder="Exemplo: Quero a pizza sem azeitona"></textarea>
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+
+    <section class="middle-width">
+        <div class="button-row">
+            <button (click)="messageSent()" class="button-center" mat-raised-button color="primary">Enviar</button>
+        </div>
+    </section>
+
+  </form>
+
+  
+
+  

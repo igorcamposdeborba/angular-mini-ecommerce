@@ -1,0 +1,10 @@
+<aside *ngIf="product.id != null" class="center">
+    <div id="clear-div">
+        <!--<button (click)="clearChart()">X</button> -->
+        <button (click)="clearChart()">X</button>
+        
+        <img src="{{ product.image }}" class="circle">
+        <p>Produto: {{ product.description }} </p>
+        <p>Id: {{ product.id }} </p>
+    </div>
+</aside>

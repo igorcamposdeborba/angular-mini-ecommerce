@@ -1,0 +1,8 @@
+<content id="model" *ngIf="products != null">
+    <div class="card" *ngFor="let product of products; let i = index;" (click)="cardClick(product.id)"> 
+        <img src="{{ product.image }}" class="header-image">
+        <p>
+            {{ product.description }}
+        </p>
+    </div>
+</content>

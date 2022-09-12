@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; padding: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+h1 {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 1vh;
+}
+p {
+    font-size: 11pt;
+}
+
+button {
+    background-color: transparent;
+    text-align: center;
+    line-height: 36px;
+    margin: 0 10px;
+    padding: 0px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #f0f0f0;
+}
+
+button:hover, button:after {
+    background-color: rgba(211, 211, 211, 0.5);
+}
+
+img {
+    margin: auto;
+    display: block;
+}
